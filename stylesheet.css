@@ -125,8 +125,8 @@ h2 {
 }
 
 .three {
-  width: 210px;
-  height: 210px;
+  width: 160px;
+  height: 160px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
