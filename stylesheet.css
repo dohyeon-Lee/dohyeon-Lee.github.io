@@ -117,7 +117,7 @@ h2 {
 
 .two {
   width: 200px;
-  height: 200px;
+  height: 230px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
