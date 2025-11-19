@@ -116,7 +116,7 @@ h2 {
 }
 
 .two {
-  width: 180px;
+  width: 200px;
   height: 200px;
   position: absolute;
   transition: opacity .2s ease-in-out;
