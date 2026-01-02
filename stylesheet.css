@@ -156,52 +156,38 @@ html {
   text-size-adjust: 100%;
 }
 
-/* 모바일에서 카드 스택 */
 @media (max-width: 700px) {
-  /* 테이블 레이아웃을 블록처럼 사용 */
+  /* 테이블 -> 모바일에서 세로 스택 */
   tr.item, td.item-media, td.item-body {
-    display: block;
+    display: block !important;
     width: 100% !important;
   }
 
   td.item-media {
     padding-bottom: 8px !important;
-  }
-
-  td.item-body {
-    padding-top: 0 !important;
-  }
-
-  /* 비디오/이미지 꽉 차게 */
-  td.item-media video,
-  td.item-media img {
-    width: 100% !important;
-    height: auto;
-    display: block;
-  }
-}
-@media (max-width: 700px) {
-  /* 미디어 칸 자체를 가운데 정렬(여백 문제 예방) */
-  td.item-media, td.item-media * {
+    text-align: center !important;
     box-sizing: border-box;
   }
-  td.item-media {
-    text-align: center;
+  td.item-body {
+    padding-top: 0 !important;
+    box-sizing: border-box;
   }
 
-  /* jonbarron 템플릿의 고정 박스/absolute를 모바일에서 해제 */
+  /* jonbarron 템플릿 미디어 박스(고정/absolute) 해제 */
   td.item-media .one,
   td.item-media .two,
   td.item-media .three {
     width: 100% !important;
     height: auto !important;
-    position: static !important;   /* absolute/relative 풀기 */
+    position: static !important;
+    display: block !important;
     margin: 0 !important;
     padding: 0 !important;
-    display: block !important;
+    overflow: visible !important; /* 필요시 hidden으로 바꿔도 됨 */
+    box-sizing: border-box !important;
   }
 
-  /* 실제 미디어를 화면(카드) 폭 꽉 차게 */
+  /* 미디어를 카드 폭에 꽉 차게 */
   td.item-media img,
   td.item-media video {
     width: 100% !important;
