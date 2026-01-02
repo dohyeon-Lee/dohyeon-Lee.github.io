@@ -149,3 +149,34 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* iOS 글자 자동 확대 방지 (추천) */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 모바일에서 카드 스택 */
+@media (max-width: 700px) {
+  /* 테이블 레이아웃을 블록처럼 사용 */
+  tr.item, td.item-media, td.item-body {
+    display: block;
+    width: 100% !important;
+  }
+
+  td.item-media {
+    padding-bottom: 8px !important;
+  }
+
+  td.item-body {
+    padding-top: 0 !important;
+  }
+
+  /* 비디오/이미지 꽉 차게 */
+  td.item-media video,
+  td.item-media img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+  }
+}
