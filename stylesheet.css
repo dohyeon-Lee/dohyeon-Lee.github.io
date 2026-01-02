@@ -206,4 +206,31 @@ html {
     word-break: break-word;
     hyphens: auto;
   }
+
+  tr.item {
+    display: block !important;
+    margin: 12px 0 !important;      /* 카드 사이 간격 */
+    padding: 14px !important;       /* 카드 안쪽 여백 */
+    border-radius: 12px !important; /* 모서리 둥글게 */
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06) !important;
+  }
+
+  /* 기존 td 패딩이 카드 padding과 겹치면 과해져서 줄이기 */
+  tr.item td.item-media,
+  tr.item td.item-body {
+    padding: 0 !important;
+  }
+
+  /* 미디어와 텍스트 사이 간격 */
+  td.item-media {
+    margin-bottom: 10px !important;
+  }
+
+  tr.item.highlight {
+    background: #ffffd0 !important;
+  }
+  tr.item:not(.highlight) {
+    background: white !important;
+  }
 }
