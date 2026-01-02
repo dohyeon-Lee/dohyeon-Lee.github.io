@@ -196,4 +196,14 @@ html {
     display: block !important;
     margin: 0 auto !important;
   }
+  tr.item, tr.item * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+  }
+
+  td.item-body {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
 }
