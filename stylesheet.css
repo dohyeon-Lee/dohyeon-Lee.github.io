@@ -180,3 +180,34 @@ html {
     display: block;
   }
 }
+@media (max-width: 700px) {
+  /* 미디어 칸 자체를 가운데 정렬(여백 문제 예방) */
+  td.item-media, td.item-media * {
+    box-sizing: border-box;
+  }
+  td.item-media {
+    text-align: center;
+  }
+
+  /* jonbarron 템플릿의 고정 박스/absolute를 모바일에서 해제 */
+  td.item-media .one,
+  td.item-media .two,
+  td.item-media .three {
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;   /* absolute/relative 풀기 */
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  /* 실제 미디어를 화면(카드) 폭 꽉 차게 */
+  td.item-media img,
+  td.item-media video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
