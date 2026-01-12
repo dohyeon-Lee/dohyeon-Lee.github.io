@@ -234,3 +234,55 @@ html {
     background: white !important;
   }
 }
+
+/* History / News box */
+.history-box{
+  margin-top: 10px;
+  padding: 14px 16px;
+  background: #111;          /* 두 번째 사진처럼 어두운 배경 */
+  border-radius: 12px;
+  max-height: 220px;         /* 내용 많아지면 여기 높이 기준으로 스크롤 */
+  overflow-y: auto;
+}
+
+/* 스크롤바(선택) - 크롬/엣지/사파리 */
+.history-box::-webkit-scrollbar{
+  width: 10px;
+}
+.history-box::-webkit-scrollbar-thumb{
+  background: #333;
+  border-radius: 10px;
+}
+.history-box::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.history-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-date{
+  width: 110px;
+  vertical-align: top;
+  padding: 8px 12px 8px 0;
+  color: #cfcfcf;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.history-item{
+  padding: 8px 0;
+  color: #eaeaea;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* 링크가 들어갈 때도 잘 보이게 */
+.history-item a{
+  color: #66aaff;
+  text-decoration: none;
+}
+.history-item a:hover{
+  text-decoration: underline;
+}
