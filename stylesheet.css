@@ -235,6 +235,42 @@ html {
   }
 }
 
+/* Spacer elements */
+sp   { display: block; height: 7px; }
+spp  { display: block; height: 5px; }
+sppp { display: block; height: 2px; }
+
+/* Page wrapper */
+.page-wrapper {
+  width: 100%;
+  max-width: 900px;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Full-width section container */
+.layout-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Publications / Projects list with row gaps */
+.items-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* History / News box */
 .history-box{
   margin-top: 10px;
