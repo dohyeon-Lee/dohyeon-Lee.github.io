@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+
+          # Copy site content to temp dir
+          cp -r . /tmp/site
+          rm -rf /tmp/site/.git
+
+          # Switch to gh-pages branch (create if not exists)
+          git fetch origin gh-pages:gh-pages 2>/dev/null || true
+          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+
+          # Replace content with master's content
+          git rm -rf . --quiet 2>/dev/null || true
+          cp -r /tmp/site/. .
+
+          # Commit and push
+          git add -A
+          git diff-index --quiet HEAD 2>/dev/null || git commit -m "deploy from ${{ github.sha }}"
+          git push origin gh-pages --force

@@ -1,0 +1,341 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+.one {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.two {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.three {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.colored-box {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/* iOS 글자 자동 확대 방지 (추천) */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (max-width: 700px) {
+  /* Bio section: photo on top, text below */
+  tr.bio-row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  td.bio-photo {
+    order: -1 !important;
+    width: 50% !important;
+    max-width: 50% !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    padding-bottom: 0 !important;
+  }
+  td.bio-text {
+    width: 100% !important;
+  }
+
+  /* 테이블 -> 모바일에서 세로 스택 */
+  tr.item, td.item-media, td.item-body {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  td.item-media {
+    padding-bottom: 8px !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+  td.item-body {
+    padding-top: 0 !important;
+    box-sizing: border-box;
+  }
+
+  /* jonbarron 템플릿 미디어 박스(고정/absolute) 해제 */
+  td.item-media .one,
+  td.item-media .two,
+  td.item-media .three {
+    width: 100% !important;
+    height: auto !important;
+    position: static !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important; /* 필요시 hidden으로 바꿔도 됨 */
+    box-sizing: border-box !important;
+  }
+
+  /* 미디어를 카드 폭에 꽉 차게 */
+  td.item-media img,
+  td.item-media video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+  tr.item, tr.item * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+  }
+
+  td.item-body {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  tr.item {
+    display: block !important;
+    margin: 12px 0 !important;      /* 카드 사이 간격 */
+    padding: 14px !important;       /* 카드 안쪽 여백 */
+    border-radius: 12px !important; /* 모서리 둥글게 */
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06) !important;
+  }
+
+  /* 기존 td 패딩이 카드 padding과 겹치면 과해져서 줄이기 */
+  tr.item td.item-media,
+  tr.item td.item-body {
+    padding: 0 !important;
+  }
+
+  /* 미디어와 텍스트 사이 간격 */
+  td.item-media {
+    margin-bottom: 10px !important;
+  }
+
+  tr.item.highlight {
+    background: #ffffd0 !important;
+  }
+  tr.item:not(.highlight) {
+    background: white !important;
+  }
+}
+
+/* Spacer elements */
+sp   { display: block; height: 7px; }
+spp  { display: block; height: 5px; }
+sppp { display: block; height: 2px; }
+
+/* Page wrapper */
+.page-wrapper {
+  width: 100%;
+  max-width: 900px;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Full-width section container */
+.layout-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Publications / Projects list with row gaps */
+.items-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* History / News box */
+.history-box{
+  margin-top: 10px;
+  padding: 14px 16px;
+  background: #111;          /* 두 번째 사진처럼 어두운 배경 */
+  border-radius: 12px;
+  max-height: 220px;         /* 내용 많아지면 여기 높이 기준으로 스크롤 */
+  overflow-y: auto;
+}
+
+/* 스크롤바(선택) - 크롬/엣지/사파리 */
+.history-box::-webkit-scrollbar{
+  width: 10px;
+}
+.history-box::-webkit-scrollbar-thumb{
+  background: #333;
+  border-radius: 10px;
+}
+.history-box::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.history-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-date{
+  width: 110px;
+  vertical-align: top;
+  padding: 8px 12px 8px 0;
+  color: #cfcfcf;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.history-item{
+  padding: 8px 0;
+  color: #eaeaea;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* 링크가 들어갈 때도 잘 보이게 */
+.history-item a{
+  color: #66aaff;
+  text-decoration: none;
+}
+.history-item a:hover{
+  text-decoration: underline;
+}
