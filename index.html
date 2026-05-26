@@ -15,8 +15,8 @@
 
           <!-- Bio -->
           <table class="layout-table"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <tr style="padding:0px" class="bio-row">
+              <td style="padding:2.5%;width:63%;vertical-align:middle" class="bio-text">
                 <p class="name" style="text-align:center">Dohyeon Lee</p>
                 <p>
                   I am an undergraduate student in the Department of IT Convergence Engineering at <a href="https://postech.ac.kr/">POSTECH</a> in South Korea. <br>
@@ -38,7 +38,7 @@
                   <a href="data/Dohyeon_Lee_CV.pdf">CV</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
+              <td style="padding:2.5%;width:37%;max-width:37%" class="bio-photo">
                 <a href="images/dohyeon.jpg">
                   <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/dohyeon.jpg" class="hoverZoomLink">
                 </a>
@@ -56,67 +56,7 @@
             </tr>
           </tbody></table>
 
-          <table class="items-table"><tbody>
-
-            <!-- RA-L 2025 -->
-            <tr class="item highlight" bgcolor="#ffffd0">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="two">
-                  <video width=100% muted autoplay loop playsInline>
-                    <source src="images/ral.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <a href="http://jgkang1210.github.io/fsdrone_ral">
-                  <span class="papertitle">A Highly Maneuverable Flying Squirrel Drone with agility-improving Foldable Wings</span>
-                </a>
-                <br>
-                <strong><a href="https://dohyeon-lee.github.io/">Dohyeon Lee*</a></strong>,
-                <strong><a href="http://jgkang1210.github.io">Jun-Gill Kang*</a></strong>,
-                Soohee Han
-                <br>
-                <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2025
-                <br>
-                <a href="http://jgkang1210.github.io/fsdrone_ral">project page</a> /
-                <a href="https://youtu.be/tckIF3KCJig?si=eKfdiEKgCLkARJma">video</a> /
-                <a href="https://arxiv.org/abs/2504.09609">arxiv</a>
-                <p></p>
-                <p>Develop general trajectory tracking controller of flying squirrel with learned wing dynamics.</p>
-              </td>
-            </tr>
-
-            <!-- IROS 2023 -->
-            <tr class="item highlight" bgcolor="#ffffd0">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="two">
-                  <video width=100% muted autoplay loop playsInline>
-                    <source src="images/fsdrone.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://jgkang1210.github.io/fsdrone">
-                  <span class="papertitle">A Highly Maneuverable Flying Squirrel Drone with Controllable Foldable Wings</span>
-                </a>
-                <br>
-                <strong><a href="http://jgkang1210.github.io">Jun-Gill Kang*</a></strong>,
-                <strong><a href="http://dohyeon-Lee.github.io">Dohyeon Lee*</a></strong>,
-                Soohee Han
-                <br>
-                <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2023
-                <br>
-                <a href="https://jgkang1210.github.io/fsdrone/">project page</a> /
-                <a href="https://www.youtube.com/watch?v=Cfc-llDb3_k">video</a> /
-                <a href="https://arxiv.org/abs/2504.09478">arxiv</a>
-                <p></p>
-                <p>Build and control non-linear dynamics governed flying squirrel inspired quadrotor using reinforcement learning.</p>
-              </td>
-            </tr>
-
-          </tbody></table>
+          <table class="items-table"><tbody id="publications-body"></tbody></table>
 
           <!-- Projects -->
           <table class="layout-table"><tbody>
@@ -127,186 +67,7 @@
             </tr>
           </tbody></table>
 
-          <table class="items-table"><tbody>
-
-            <!-- Reachability-Aware MPPI -->
-            <tr class="item">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="three">
-                  <video width=100% muted autoplay loop playsInline>
-                    <source src="images/reachability_mppi.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Reachability-Aware MPPI for aggressive maneuvers</span>
-                <br>
-                08.2025-Current
-                <p></p>
-                <p>
-                  • Environment estimation from the sample history of MPPI.<br>
-                  • Obtain the reachable set using an empirical gramian based method.<br>
-                </p>
-              </td>
-            </tr>
-
-            <!-- Flying Squirrel Drone development -->
-            <tr class="item">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="three">
-                  <video width=100% muted autoplay loop playsInline>
-                    <source src="images/folding.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Development of highly maneuverable Flying Squirrel Drone</span>
-                <br>
-                06.2022-06.2025
-                <br>
-                <a href="https://www.youtube.com/watch?v=jfrGFKJBSQk">video</a>
-                <p></p>
-                <p>
-                  • Implement integral backstepping based Lyapunov stable controller for drone.<br>
-                  • Implement adaptive Kalman filters for state estimation under aggressive maneuvers.<br>
-                  • Collect data using Mocap and GNSS for training neural net dynamics model.<br>
-                  • Implement simulation for full SE(3) dynamics model using MATLAB using ode45 integrator.<br><br>
-                  Skills : Linkage system design, 3D CAD, Hardware design, GNSS, Mocap, Learning from demonstration
-                </p>
-              </td>
-            </tr>
-
-            <!-- Sloshing control / PIRNN -->
-            <tr class="item">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="three">
-                  <video width=100% muted autoplay loop playsInline>
-                    <source src="images/PIRNN.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Sloshing control with Physics-Informed RNN by 6-axis manipulator</span>
-                <br>
-                08.2023 - 02.2024
-                <br>
-                <em>Related achievement: 1st place, 2023 Undergraduate Group Research Program</em>, POSTECH
-                <br>
-                <a href="https://www.youtube.com/watch?v=T9wJdGqZ08M">video</a>
-                <p></p>
-                <p>
-                  • Development of 6-axis manipulator hardware and stabilization of low-level control system.<br>
-                  • Proposal and Implementation of a Physics-Informed RNN for water state observer.<br>
-                  • Implement LQR controller and velocity motion planning of manipulator for water sloshing control.<br><br>
-                  Skills : 3D CAD, 3D printing, Physics-Informed Learning, ROS2
-                </p>
-              </td>
-            </tr>
-
-            <!-- Quad-manipulator -->
-            <tr class="item">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="three">
-                  <video width=100% muted autoplay loop playsInline>
-                    <source src="images/quad-mani.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Whole-body control of quadrupedal robot with arm by off-policy RL</span>
-                <br>
-                06.2023-08.2023
-                <br>
-                <a href="https://www.youtube.com/playlist?list=PLLd5hfmoa2fuWQrj54kKQMY9UuiJd81Zl">video</a>
-                <p></p>
-                <p>
-                  • implement off-policy (SAC) and on-policy (PPO) RL to a Legged-manipulator robot in the Isaac Gym.<br>
-                  • Designed a learning pipeline for whole-body control of a legged-manipulator robot using a VAE and replay buffer of an off-policy RL.<br><br>
-                  Skills : OSC(operational space controller), Isaac Gym, RL
-                </p>
-              </td>
-            </tr>
-
-            <!-- Glidable Flying Squirrel Drone -->
-            <tr class="item">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="two">
-                  <img src="images/gliding_fsdrone.jpg" style="width:100%;">
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Development of Glidable Flying Squirrel Drone</span>
-                <br>
-                02.2022-06.2022
-                <br>
-                <a href="https://www.youtube.com/watch?v=qwZ8eyZMWT8">video</a>
-                <p></p>
-                <p>
-                  • Develop Glidable drone with foldable wings.<br>
-                  • Simulating gliding drone with matlab.<br><br>
-                  Skills : 3D CAD, 3D printing, Kalman Filter
-                </p>
-              </td>
-            </tr>
-
-            <!-- Quadruped-wheel robot -->
-            <tr class="item">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="three">
-                  <video width=100% muted autoplay loop playsInline>
-                    <source src="images/quad.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Quadruped-wheel robot control with impedance control</span>
-                <br>
-                08.2021-01.2022
-                <br>
-                <em>Related achievement: 1st place, 2021 Undergraduate Group Research Program</em>, POSTECH
-                <br>
-                <a href="https://www.youtube.com/watch?v=w6soX67v2ak&list=PLLd5hfmoa2ftkwRfBsPty_AR3C6DIdLwq&index=1">video</a>
-                <p></p>
-                <p>
-                  • Development of quadruped-wheel robot hardware and stabilization of low-level control system.<br>
-                  • Balancing control with inverse kinematics.<br>
-                  • Application of impedance control to the robot legs.<br><br>
-                  Skills : 3D CAD, 3D printing, CAN protocol, UDP protocol, simulating impedance control with matlab
-                </p>
-              </td>
-            </tr>
-
-            <!-- Self-driving platform -->
-            <tr class="item">
-              <td class="item-media" style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one"><div class="two">
-                  <img src="images/mob.jpg" style="width:100%;">
-                </div></div>
-              </td>
-              <td class="item-body" style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Development of self-driving platform using mecanum wheel and 2D lidar</span>
-                <br>
-                11.2020-02.2021
-                <br>
-                <em>Related achievement: 3rd place, 2021 ICT Convergence Project Contest</em>, devicemart
-                <br>
-                <a href="https://www.youtube.com/watch?v=w6soX67v2ak&list=PLLd5hfmoa2ftkwRfBsPty_AR3C6DIdLwq&index=1">video</a>
-                <p></p>
-                <p>
-                  • Directly implement mapping and A* algorithms with Python.<br>
-                  • Development SLAM algorithm from scratch.<br>
-                  • Hardware development.<br><br>
-                  Skills : 3D CAD, 3D printing, ROS1
-                </p>
-              </td>
-            </tr>
-
-          </tbody></table>
+          <table class="items-table"><tbody id="projects-body"></tbody></table>
 
           <!-- In the Media -->
           <table class="layout-table"><tbody>
@@ -344,5 +105,6 @@
         </td>
       </tr>
     </table>
+    <script src="js/loader.js"></script>
   </body>
 </html>
