@@ -1,4 +1,5 @@
 const PUBLICATIONS = [
+  'publications/NeurIPS2026/content.html',
   'publications/ral2025/content.html',
   'publications/iros2023/content.html',
 ];
